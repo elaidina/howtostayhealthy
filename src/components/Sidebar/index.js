@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link, StaticQuery, graphql } from 'gatsby';
-import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { Link, StaticQuery, graphql } from "gatsby";
+import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { config } from '../../../data';
+import { config } from "../../../data";
 
-import Information from './Information';
+import Information from "./Information";
 
-import './index.scss';
+import "./index.scss";
 
 const {
   wordings = [],
@@ -16,7 +16,7 @@ const {
   email,
   iconUrl,
   about,
-  facebook,
+  facebook
 } = config;
 
 const Icon = ({ href, icon }) => (
@@ -41,18 +41,18 @@ const Sidebar = ({ totalCount, latestPosts }) => (
       </Link>
       <p className="mb-1">{wordings[0]}</p>
       <p className="mb-3">{wordings[1]}</p>
-      <Icon
-        href={`https://www.zhihu.com/people/${zhihuUsername}`}
-        icon={['fab', 'zhihu']}
-      />
+
       <Icon
         href={`https://github.com/${githubUsername}`}
-        icon={['fab', 'github']}
+        icon={["fab", "github"]}
       />
-      <Icon href={`mailto:${email}`} icon={['far', 'envelope']} />
-      {facebook
-        && <Icon href={`https://www.facebook.com/${facebook}/`} icon={['fab', 'facebook']} />
-      }
+      <Icon href={`mailto:${email}`} icon={["far", "envelope"]} />
+      {facebook && (
+        <Icon
+          href={`https://www.facebook.com/${facebook}/`}
+          icon={["fab", "facebook"]}
+        />
+      )}
       <Information totalCount={totalCount} posts={latestPosts} />
     </div>
   </header>
@@ -60,17 +60,17 @@ const Sidebar = ({ totalCount, latestPosts }) => (
 
 Icon.propTypes = {
   href: PropTypes.string.isRequired,
-  icon: PropTypes.arrayOf(PropTypes.string).isRequired,
+  icon: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 Sidebar.propTypes = {
   totalCount: PropTypes.number,
-  latestPosts: PropTypes.array, //eslint-disable-line
+  latestPosts: PropTypes.array //eslint-disable-line
 };
 
 Sidebar.defaultProps = {
   totalCount: 0,
-  latestPosts: [],
+  latestPosts: []
 };
 
 export default () => (

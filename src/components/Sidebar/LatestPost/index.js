@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
-import './index.scss';
+import "./index.scss";
 
 const LatestPost = ({ posts }) => (
   <div className="latest-post">
-    <p>最新文章</p>
+    <p>Latest post</p>
     {posts.map(({ node }) => (
       <Link
         to={node.frontmatter.url || node.frontmatter.slug || node.fields.slug}
@@ -21,7 +21,7 @@ const LatestPost = ({ posts }) => (
 );
 
 LatestPost.propTypes = {
-  posts: PropTypes.arrayOf(PropTypes.object).isRequired,
+  posts: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
 export default LatestPost;
