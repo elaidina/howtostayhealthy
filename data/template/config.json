@@ -17,7 +17,7 @@
   },
   "title": "How to stay healthy",
   "gitalk": {
-    "repo": "https://github.com/elaidina/howtostayhealthy",
+    "repo": "howtostayhealthy.github.io",
     "admin": ["elaidina"],
     "owner": "elaidina",
     "clientID": "80bd35b63cc47a170112",
