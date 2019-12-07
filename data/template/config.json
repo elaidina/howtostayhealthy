@@ -30,7 +30,23 @@
   "friends": [
     {
       "href": "https://laurahorackova.netlify.com",
-      "title": "How to stay healthy"
+      "title": "Laura Horackova"
+    },
+    {
+      "href": "https://stayathomemom.netlify.com",
+      "title": "Stay at home mom"
+    },
+    {
+      "href": "https://lauraisdrawing.netlify.com",
+      "title": "Laura is drawing"
+    },
+    {
+      "href": "https://codingforeveryone.netlify.com",
+      "title": "Coding for everyone"
+    },
+    {
+      "href": "https://homeschooling.netlify.com",
+      "title": "Homeschooling"
     }
   ],
   "iconUrl": "https://stayathomemom.netlify.com/static/31ee5c560a582e6822b93dbd2c681f2a/cb3d3/profile-pic.jpg",

@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import ExternalLink from '../../ExternalLink';
+import ExternalLink from "../../ExternalLink";
 
-import { config } from '../../../../data';
+import { config } from "../../../../data";
 
-import './index.scss';
+import "./index.scss";
 
 const { friends = [] } = config;
 
 const Friend = () => (
   <div className="friend">
-    <p>友情鏈接</p>
+    <p>Other projects</p>
     {friends.map(friend => (
       <ExternalLink
         href={friend.href}

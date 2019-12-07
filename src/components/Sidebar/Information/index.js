@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import Friend from '../Friend';
-import LatestPost from '../LatestPost';
-import './index.scss';
+import Friend from "../Friend";
+import LatestPost from "../LatestPost";
+import "./index.scss";
 
 // eslint-disable-next-line react/prop-types
 const Information = ({ totalCount, posts }) => (
   <div className="d-none d-lg-block information my-2">
     <hr />
     <p>
-      共&nbsp;
+      &nbsp;
       {totalCount}
-      &nbsp;篇文章
+      &nbsp;posts
     </p>
     <hr />
     <LatestPost posts={posts} />
@@ -24,11 +24,11 @@ const Information = ({ totalCount, posts }) => (
 
 Information.propTypes = {
   totalCount: PropTypes.number.isRequired,
-  posts: PropTypes.array,
+  posts: PropTypes.array
 };
 
 Information.defaultProps = {
-  posts: [],
+  posts: []
 };
 
 export default Information;
